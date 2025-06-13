@@ -17,18 +17,26 @@ echo "Upscaler model directory is ready at $ESRGAN_MODELS_DIR"
 # ▼▼▼ PASTE YOUR MODEL DOWNLOAD LINKS FROM OPENMODELDB.INFO BELOW ▼▼▼
 #
 # HOW-TO:
-#   1. Go to https://openmodeldb.info/
-#   2. Find a model you want.
-#   3. Right-click the blue "Download" button and select "Copy Link Address".
-#   4. Create a new line below and paste it inside the quotes for the wget command.
+#   1. Go to https://openmodeldb.info/
+#   2. Find a model you want.
+#   3. Right-click the blue "Download" button and select "Copy Link Address".
+#   4. Create a new line below and paste it inside the quotes for the wget command.
 #
 # TEMPLATE:
-#   wget -nc -P "$ESRGAN_MODELS_DIR" "PASTE_YOUR_LINK_HERE"
+#   wget -nc -P "$ESRGAN_MODELS_DIR" "PASTE_YOUR_LINK_HERE"
 # ------------------------------------------------------------------------------------
 
 echo "--- Downloading Upscaler Models ---"
 
+# Model 1: 4x-UltraSharp
 wget -nc -P "$ESRGAN_MODELS_DIR" "https://huggingface.co/lokCX/4x-UltraSharp/resolve/main/4x-UltraSharp.pth"
+
+# Model 2: 4x_NMKD-Siax_200k (Example)
+wget -nc -P "$ESRGAN_MODELS_DIR" "https://huggingface.co/Akumetsu971/SD_upscalers/resolve/main/4x_NMKD-Siax_200k.pth"
+
+# Model 3: lollypop (Example)
+wget -nc -P "$ESRGAN_MODELS_DIR" "https://huggingface.co/substat/lollypop-upscaler/resolve/main/lollypop.pth"
+
 # Add your new models on the lines below:
 
 
