@@ -28,7 +28,7 @@ echo "Upscaler model directory is ready at $ESRGAN_MODELS_DIR"
 
 echo "--- Downloading Upscaler Models ---"
 
-wget -nc -P "$ESRGAN_MODELS_DIR" "https://drive.google.com/uc?export=download&confirm=1&id=1d3wPbtjFcgCkWAMVFQalOuQHdiNmfc5i"
+wget -nc -P "$ESRGAN_MODELS_DIR" "https://huggingface.co/lokCX/4x-UltraSharp/resolve/main/4x-UltraSharp.pth"
 # Add your new models on the lines below:
 
 
